@@ -1,0 +1,5 @@
+curl;apt;curl
+ssh;apt;ssh
+wget;apt;wget
+php;apt;php
+unzip;apt;unzip
