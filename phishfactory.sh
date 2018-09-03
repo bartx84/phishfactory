@@ -3,7 +3,7 @@
 #https://github.com/bartx84/fishfactory
 #some themes included and integrated theme creator
 #bartx [at] mail.com
-version="1.0.0.1"
+version="1.0.0.2"
 sites_dir="sites"
 appdir=$(pwd)
 sd="$appdir/$sites_dir"
@@ -124,9 +124,8 @@ echo -e "${GREEN}Chose the PORT [80]${NC}"
 read port
 	if [[ $port == "" ]]; then
 	port="80"
-	start_php $site $port
 	fi
-
+start_php $site $port
 elif [[ $option == 2 || $option == 02 ]]; then
 clear
 echo -e "${GREEN}Chose the PORT [3333]${NC}"
